@@ -1,0 +1,87 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+}
+
+/* ===== CONTENEUR ===== */
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* ===== TITRE ===== */
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+/* ===== SOUS TEXTE ===== */
+.status {
+    opacity: 0.8;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* ===== VALEUR ===== */
+.value, .valeur {
+    font-size: 60px;
+    font-weight: bold;
+    color: #38bdf8;
+    margin: 20px 0;
+    text-shadow: 0 0 20px rgba(56,189,248,0.5);
+    animation: pulse 2s infinite;
+}
+
+/* ===== TEXTE HAUT ===== */
+.top-value {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+/* ===== BOUTONS ===== */
+button {
+    width: 45%;
+    padding: 14px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.25s ease;
+    color: white;
+}
+
+/* ===== HOVER ===== */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* ===== LED & BUZZER (MODIF ICI) ===== */
+.led, .buzzer {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+}
